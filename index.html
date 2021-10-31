@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#">inicio</a>
+                        <a class="nav-link link-primary " aria-current="page" href="#">inicio</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -36,19 +37,38 @@
                             <li><a class="dropdown-item" href="#">caricatura</a></li>
                         </ul>
                     </li>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn text-white" style="background-color: blueviolet;" id="boton" type="submit">Buscar</button>
-                    </form>
+
                 </ul>
-                
+                <form class="input-group h-75 me-5 ms-5" >
+                    <input class="form-control  " type="search" id="buscar" placeholder="Search" aria-label="Search">
+                    <button class=" btn text-white input-group-text" style="background-color: blueviolet;" id="boton"
+                        type="submit"><i class="fas fa-search"></i></button>
+                </form>
 
             </div>
+            <form class="d-flex ">
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle btn btn-primary " href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user w-100"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">anime</a></li>
+                        <li><a class="dropdown-item" href="#">caricatura</a></li>
+                    </ul>
+                </li>
+
+                
+            </form>
         </div>
     </nav>
+    <div class="container w-75 bg-dark text-white mt-2 text-center">
+        <h2 id="h2"></h2>
+    </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/f82dcd074a.js"></script>
 </body>
 
 </html>
